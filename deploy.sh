@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
-hugo -t hermit 
+hugo -t hyde
 cd public
 git add .
 msg="rebuilding site `date`"
