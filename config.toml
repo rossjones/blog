@@ -22,15 +22,17 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   tag = "tags"
 
 [params]
+  themeColor = "theme-base-0b"
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
+  description = "Ross' Random Ramblings"
 
   # Metadata mostly used in document's head
   # description = ""
   # images = [""]
-  themeColor = "#494f5c"
+  #themeColor = "#494f5c"
 
   homeSubtitle = "Ross' Random Rambling"
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
@@ -56,16 +58,17 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
   [[menu.main]]
     name = "Posts"
-    url = "posts/"
+    url = "/posts/"
     weight = 10
 
   [[menu.main]]
     name = "About"
-    url = "about/"
+    url = "/about/"
     weight = 20
 
 
-theme = "hermit"
+theme = "hyde"
 
 [permalinks]
   posts = "/posts/:slug"
+
